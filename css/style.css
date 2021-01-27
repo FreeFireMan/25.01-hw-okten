@@ -10,7 +10,7 @@
 .header-top {
     height: 92px;
     background-color: #f9f9f9;
-    padding: 0 50px;
+    padding: 0 101px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,6 +28,9 @@
     line-height: 20px;
     text-decoration: none;
 }
+.nav-item a:hover {
+    color: #3298f2;
+}
 .header-callback {
     width: 305px;
 }
@@ -42,10 +45,13 @@
 }
 
 .header-main {
-    padding: 89px 70px 150px 122px;
+    padding: 89px 100px 150px 245px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 .header-contant {
-    width: 560px;
+    width: 643px;
 }
 .header-sub-title {
     font-size: 19px;
@@ -54,4 +60,120 @@
     font-weight: 900;
     text-transform: uppercase; 
     margin-bottom: 48px;
+}
+.header-title {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.header-title span {
+    color: #3298f2; 
+}
+.header-text {
+    font-weight: 500;
+    line-height: 26px;
+    color: #333333;
+}
+.header-text p:last-child {
+    font-weight: bold;
+    margin-top: 37px;
+}
+.header-contant-btn {
+    margin-top: 120px;
+}
+.header-contant-btn button {
+    width: 382px;
+    height: 60px;
+    background-color: #ff9638;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #292929;
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+.header-contant-btn button::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff;
+    transform: skewX(-20deg);
+    top: 0;
+    filter: blur(15px);
+    left: -200px;
+    animation: xxx 3500ms ease-in-out infinite;
+}
+@keyframes xxx {
+    0% {
+        left: -200px;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+.header-school {
+    width: 760px;
+}
+.header-school-okten {
+    font-size: 202px;
+    font-weight: 900;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #3298f2, #ff9638);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 40px;
+    line-height: 150px;
+}
+.header-school-school {
+    font-size: 168px;
+    font-weight: 900;
+    color: #ffffff;
+    -webkit-text-stroke-color: #3298f2;
+    -webkit-text-stroke-width: 2px;
+    text-transform: uppercase;
+    line-height: 130px;
+    margin-bottom: 30px;
+}
+.header-school-program {
+    font-size: 68px;
+    line-height: 83px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.play-wrap, .play-btn, .play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.play-wrap {
+    position: absolute;
+    border: 1px solid #ff9638;
+    width: 156px;
+    height: 156px;
+    bottom: 110px;
+    left: 50%;
+    margin-left: -78px;
+}
+.play-btn {
+    border: 2px solid #ff9638;
+    width: 96px;
+    height: 96px;
+
+}
+.play {
+    border: 3px solid #ff9638;
+    width: 82px;
+    height: 82px;
+    background-color: #c4c4c4;
+}
+.play i {
+    font-size: 25px;
+    color: #ffffff;
 }
